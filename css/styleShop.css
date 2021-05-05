@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font:  'Montserrat Light','Century Gothic','Helvetica','Arial';
+}
+
+.waIcon{
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index : 99999;
+}
+#bt {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+#bt a {
+    width: 64px;
+    display: block;
+    text-align: center;
+    font: 11px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #bbb;    
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+}
+#bt a:hover {
+    color: #000;
+}
+#bt span {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-bottom: 7px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 20px;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    opacity: .4;
+}
+#bt a:hover span {
+    opacity: 1;
+}
+
+a{
+    text-decoration : none;
+    color : #4A4A4A
+}
+
+.top{
+    display: inline-block;
+    width: 100%;
+}
+
+.top .logo{
+    width : 100px;
+    height: 51px;
+    margin: 20px 40px;
+    display: block;
+    position: absolute;
+}
+
+.top .search{
+    display: inline;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 75%;
+    width: 30px;
+    height: 30px;
+}
+
+.top span{
+    display: block;
+    text-decoration: underline;
+    margin-left: 83%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-family: 'Arial';
+}
+
+/* BANNER */
+
+#slides {
+    background:white;
+    padding:10px;
+    margin-bottom:10px;
+  }
+  
+#slides img{
+    width:200px;
+}
+
+  #slides .slidesjs-navigation {
+    margin-top:3px;
+  }
+  
+  #slides .slidesjs-previous {
+    margin-right: 5px;
+    float: left;
+  }
+  
+  #slides .slidesjs-next {
+    margin-right: 5px;
+    float: left;
+  }
+  
+  .slidesjs-pagination {
+    margin: 6px 0 0;
+    float: right;
+    list-style: none;
+  }
+  
+  .slidesjs-pagination li {
+    float: left;
+    margin: 0 1px;
+  }
+  
+  .slidesjs-pagination li a {
+    display: block;
+    width: 13px;
+    height: 0;
+    padding-top: 13px;
+    background-image: url(../img/pagination.png);
+    background-position: 0 0;
+    float: left;
+    overflow: hidden;
+  }
+  
+  .slidesjs-pagination li a.active,
+  .slidesjs-pagination li a:hover.active {
+    background-position: 0 -13px
+  }
+  
+  .slidesjs-pagination li a:hover {
+    background-position: 0 -26px
+  }
+  
+  #slides a:link,
+  #slides a:visited {
+    color: #333
+  }
+  
+  #slides a:hover,
+  #slides a:active {
+    color: #9e2020
+  }
+  
+  .navbar {
+    overflow: hidden
+  }
+  
+
+.jenis{
+    text-align: center;   
+    /* word-spacing: 30px; */
+    margin-bottom: 0px;
+    display: inline-flex;
+    margin: 0 25%;
+}
+
+.jenis > div{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.jenis a{
+    font-size: 18px;
+    font-family: 'Arial';
+    color: rgb(3, 3, 3);
+}
+
+.jenis a:hover , .nav a:hover{
+    text-decoration: none;
+    color: #006766;
+}
+.nav a{
+    color: #4A4A4A;
+}
+
+.nav {
+    border-top: 1px solid #4A4A4A;
+    border-bottom: 1px solid #4A4A4A;
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+
+.nav ul{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+.nav ul li{
+    float: left;
+    margin-right: 60px;
+    margin-left: 85px;
+    padding-top: 5px;
+}
+
+.daftarBaju {
+    width: 24%;
+    margin: 10px 6px;
+    float: left;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+}
+
+.daftarBaju a{
+    color: black;
+}
+
+.daftarBaju:hover{
+    box-shadow: 1px 3px 20px black;
+    border-radius: 10px;
+    background-color: rgb(224, 219, 219);
+    transition: all ease .5s;
+}
+
+.daftarBaju a:hover{
+    color: black;
+}
+
+.daftarBaju img{
+    width: 100%;
+    margin-left: -40px;
+}
+
+.addToCart{
+    background: linear-gradient(to right, #006766, #025250, #003534);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.daftarBaju a{
+    margin: 10px 40px;
+}
+
+.addToCart:hover{
+    background: black;
+}
+
+.nama, .harga{
+    text-align: center;
+    line-height: 20px;
+}
+
+.nama{
+    margin-top: 20px;
+}
+
+.harga{
+    margin-top: -5px;
+}
+
+.pesanCustom, .daftarCart{
+    text-align: center;
+    width: 100%;
+    line-height: 40px;
+}
+
+.daftarCart table{
+    margin: auto;
+}
+
+.daftarCart table tr{
+    line-height: 80px;
+    border-bottom: 1px solid black;
+}
+
+.detailProduk{
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px 40px;
+}
+
+.detailProduk h1{
+    color: #4A4A4A;
+    text-align: center;
+    margin-bottom: 70px;
+    font-weight: bold;
+    text-shadow: 2px 5px 2px rgb(170, 164, 164);
+}
+.detailProduk h5{
+    color: #4A4A4A;
+    text-align: justify;
+    font-weight: bold;
+    margin:20px;
+}
+
+.detailProduk p{
+    text-align: justify;
+    padding: 0px 20px;
+}
+
+.daftarCart .backFromCart, .pesanCustom .order{
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, #006766, #025250, #003534);
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+    border-radius: 20px;
+    color: white;
+}
+
+.daftarCart .backFromCart:hover , .pesanCustom .order:hover{
+    background: black;
+}
+
+#lanjutPemesanan a{
+    background: linear-gradient(to right, #006766, #025250, #003534);
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+
+#lanjutPemesanan a:hover{
+    background: black;
+}
+
+
+.element-form {
+    margin-bottom: 15px;
+}
+
+.element-form label {
+    display: block;
+    font-weight: bold;
+}
+
+
+.element-form span input,
+.element-form span input,
+.element-form span textarea,
+.element-form span select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.element-form span input[type="submit"] {
+    background: linear-gradient(to right, #006766, #025250, #003534);
+    font-size: 20px;
+    cursor: pointer;
+    margin: auto;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+.element-form span input[type="submit"]:hover{
+    background: black;
+}
+
+.table-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-list tr {
+    border-bottom: 1px solid #1e5474;
+}
+
+.table-list tr.baris-title {
+    color: white;
+    background: linear-gradient(to right, #006766, #025250, #003534);
+}
+
+.table-list tr th,
+.table-list tr td  {
+    padding: 10px 7px;
+    text-align: center;
+}
+
+.kolom-nomor {
+    width: 20px;
+    text-align: center;
+}
+
+.tengah {
+    text-align: center;
+}
+
+.kiri {
+    text-align: left;
+}
+
+.kanan {
+    text-align: right;
+}
+
+.mainCheckout{
+    padding: 30px 100px;
+}
+
+#frame-data-pengiriman {
+    float: left;
+    width: 500px;
+    margin-right: 50px;
+}
+
+#frame-data-detail {
+    float: left;
+    width: 560px;
+}
+
+#frame-detail-order {
+    border: 1px solid grey;
+}
+
+#frame-form-pengiriman {
+    border: 1px solid grey;
+    padding: 25px;
+}
+
+h3.label-data-pengiriman {
+    border: 1px solid grey;
+    padding: 10px 7px;
+    margin: 0px;
+    text-align: center;
+    background: linear-gradient(to right, #006766, #025250, #003534);
+    color: white;
+}
+
+.kontenOrders, .kontenKonfirmasi{
+    width: 90%;
+    margin: 20px auto;
+}
+
+.kontenOrders h1{
+    text-align: center;
+}
+
+.kontenOrders table td, .konten table th{
+    text-align: center;
+}
+
+.kontenOrders a , .kontenKonfirmasi a{
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #006766, #025250, #003534);
+}
+  
+.kontenOrders a:hover , .kontenKonfirmasi a:hover{
+    text-decoration: none;
+    background:black;
+    width: max-content;
+    height: max-content;
+    color: white;
+    border-radius: 5px;
+  }
+
+.main .info{
+    position: absolute;
+    margin: 50px 30%;
+}
+
+.info{
+    margin: 10px 10px;
+    color: #4A4A4A;
+    font-size: 14px;
+    float: left;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.border{
+    background-color: black;
+    height: 3px;
+    width: 35px;
+    margin: 10px 0px;
+}
+
+.info .contact{
+    float: left;
+    margin: 20px 0px;
+    margin-right: 100px;
+}
+
+.info .contact p{
+    line-height: 30px;
+}
+
+.info .faq{
+    width: 300px;
+    float: left;
+    margin: 20px 30px;
+    margin-right: 50px;
+}
+
+.info .faq span{
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    line-height: 30px;
+}
+
+.info .discover{
+    width: 300px;
+    float: left;
+    margin: 20px 10px;
+}
+
+.info .discover span{
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    line-height: 30px;
+}
+
+.faq a:hover, .discover a:hover{
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #006766, #025250, #003534);
+}
+
+.info .subscribe{
+    width: 300px;
+    float: left;
+    margin: 20px 15px;
+}
+
+.info .subscribe .kontenSubs{
+    line-height: 30px;
+}
+
+.info .subscribe .email{
+    margin: 15px 0px;
+    display: block;
+    background-color: rgba(0,0,0,0.03);
+    box-shadow: none;
+    border-color: rgba(0,0,0,0.09);
+    color: currentColor !important;
+    border-radius: 99px;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    outline: none;
+}
+
+.info .subscribe .signup{
+    background-color: #0a0a0a;
+    border-radius: 30px;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    width: 100px;
+    cursor: pointer;
+}
+
+.copyright{
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #0a0a0a;
+    height: 30px;
+}
+
+
+.footer a{
+    color: #4A4A4A;
+}
+
+#formSlide{
+    width:max-content; 
+    margin:auto;
+}
+
+#formSlide h2{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(41, 40, 40);
+    text-shadow: 2px 1px 10px white;
+}
+
+.slideshow-container-polos {
+    padding: 20px 20px;
+    max-width: max-content;
+    position: relative;
+    margin: 0px 20px;
+}
+
+.slideshow-container-art {
+    padding: 20px 20px;
+    max-width: max-content;
+    position: relative;
+    margin: 0px 20px;
+}
+
+.slideshow-container-brands {
+    padding: 20px 20px;
+    max-width: max-content;
+    position: relative;
+    margin: 0px 20px;
+}
+
+.slideshow-container-polos,.slideshow-container-art,.slideshow-container-brands{
+    
+    box-shadow: 1px 1px 5px black;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: all ease .5s;
+}
+.slideshow-container-polos:hover,.slideshow-container-art:hover,.slideshow-container-brands:hover{
+    
+    box-shadow: 1px 3px 20px black;
+    border-radius: 10px;
+    background-color: rgb(224, 219, 219);
+    transition: all ease .5s;
+}
+  /* The dots/bullets/indicators */
+  .dotPolos, .dotArt, .dotBrands {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: none;
+    transition: background-color 0.6s ease;
+  }
+  .activePolos, .activeArt, .activeBrands {
+    background-color: #717171;
+  }
+
+  
+  /* Fading animation */
+  .fadePolos {
+    -webkit-animation-name: fadePolos;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadePolos;
+    animation-duration: 1.5s;
+  }
+
+  .fadeArt {
+    -webkit-animation-name: fadeArt;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeArt;
+    animation-duration: 1.5s;
+  }
+  .fadeBrands {
+    -webkit-animation-name: fadeBrands;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeBrands;
+    animation-duration: 1.5s;
+  }
+
+  .fadeBanner {
+    -webkit-animation-name: fadeBanner;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fadeBanner;
+    animation-duration: 1.5s;
+  }
+  @-webkit-keyframes fadePolos {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadePolos {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @-webkit-keyframes fadeArt {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeArt {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  @-webkit-keyframes fadeBrands {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeBrands {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeBanner {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeBanner {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
